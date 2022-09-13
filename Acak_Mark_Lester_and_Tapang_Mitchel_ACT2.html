@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Activity 2</title>
+  </head>
+  <body>
+    <div class="container w-75">
+      <section id="top-section" class="text-center mt-4">
+        <h2 class="mt-5 fw-bold">Sage YMCA Before/After School Program</h2>
+        <h3 class="mt-4 fw-normal">
+          Registration Form <span class="text-danger">2016 - 2017</span>
+        </h3>
+        <p class="mt-4" style="text-align: justify">
+          The following information is required to ensure your child's spot in
+          our program for the 2016-2017 school year. Please complete all
+          registration information accurately and neatly, and return it in
+          person to the front desk at The Sage YMCA with the
+          <span class="text-danger"
+            >non-refundable registration fee of $50.00 per child.
+          </span>
+          Registrations and payments will not be taken at the school sites.
+        </p>
+      </section>
+      <section id="body-section" class="mt-5">
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="first-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-4 my-3">
+            <input class="d-block form-control" type="text" id="fullname" />
+            <label for="fullname" class="form-label"
+              >Child's: First name Last name</label
+            >
+          </div>
+          <div class="d-inline-block col-md-4 my-3">
+            <select class="form-select d-block" name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <label for="gender" class="form-label">Gender (M/F)</label>
+          </div>
+
+          <div class="d-inline-block col-md-4 my-3">
+            <input
+              class="form-control d-block"
+              type="date"
+              id="birthday"
+              name="birthday"
+            />
+            <label for="birthday">Date of Birth</label>
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="second-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-6 my-3">
+            <input class="d-block form-control" type="text" id="school" />
+            <label for="school" class="form-label">School</label>
+          </div>
+          <div class="d-inline-block col-md-6 my-3">
+            <input
+              type="number"
+              class="form-control"
+              id="grade"
+              name="grade"
+              min="1"
+              max="12"
+            />
+            <label for="grade" class="form-label"
+              >Grade (16-17 school year)</label
+            >
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="third-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="address" />
+            <label for="address" class="form-label">Home Address</label>
+          </div>
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="city" />
+            <label for="city" class="form-label">City</label>
+          </div>
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="state" />
+            <label for="state" class="form-label">State</label>
+          </div>
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="zip" />
+            <label for="zip" class="form-label">Zip</label>
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="fourth-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-6 my-3">
+            <input
+              class="d-block form-control"
+              type="text"
+              id="phone"
+              placeholder="0123-4567"
+              pattern="[0-9]{4}-[0-9]{4}"
+              required
+            />
+            <label for="phone" class="form-label">Home Phone</label>
+          </div>
+          <div class="d-inline-block col-md-6 my-3">
+            <input
+              class="d-block form-control"
+              type="email"
+              id="email"
+              placeholder="yourname@example.com"
+            />
+            <label for="email" class="form-label">Email Address</label>
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="fifth-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-4 my-3">
+            <input class="d-block form-control" type="text" id="name" />
+            <label for="name" class="form-label"
+              >Mother's: First Name Last Name</label
+            >
+          </div>
+          <div class="d-inline-block col-md-4 my-3">
+            <input
+              class="d-block form-control"
+              type="text"
+              id="work-phone"
+              placeholder="0123-4567"
+              pattern="[0-9]{4}-[0-9]{4}"
+              required
+            />
+            <label for="work-phone" class="form-label">Work Phone</label>
+          </div>
+          <div class="d-inline-block col-md-4 my-3">
+            <input
+              class="d-block form-control"
+              type="text"
+              id="cell-phone"
+              placeholder="0123-456-7890"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <label for="cell-phone" class="form-label">Cell Phone</label>
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="sixth-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-4 my-3">
+            <input class="d-block form-control" type="text" id="name" />
+            <label for="name" class="form-label"
+              >Father's: First Name Last Name</label
+            >
+          </div>
+          <div class="d-inline-block col-md-4 my-3">
+            <input
+              class="d-block form-control"
+              type="text"
+              id="work-phone"
+              placeholder="0123-4567"
+              pattern="[0-9]{4}-[0-9]{4}"
+              required
+            />
+            <label for="work-phone" class="form-label">Work Phone</label>
+          </div>
+          <div class="d-inline-block col-md-4 my-3">
+            <input
+              class="d-block form-control"
+              type="text"
+              id="cell-phone"
+              placeholder="0123-456-7890"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <label for="cell-phone" class="form-label">Cell Phone</label>
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="seventh-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-6 my-3">
+            <input
+              class="d-block form-control"
+              type="tel"
+              id="emergency"
+              placeholder="0123-4567"
+              pattern="[0-9]{4}-[0-9]{4}"
+              required
+            />
+            <label for="emergency" class="form-label">Emergency Contact</label>
+          </div>
+          <div class="d-inline-block col-md-6 my-3">
+            <input
+              class="d-block form-control"
+              type="tel"
+              id="phone-no"
+              placeholder="0123-456-7890"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <label for="phone-no" class="form-label">Phone #</label>
+          </div>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div class="eight-info">
+          <p class="text-danger my-5">
+            Monthly Payments will be made: At the YMCA_____ Online_____ Bank
+            Draft _____
+          </p>
+        </div>
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div id="ninth-info" class="text-center row my-3">
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="address" />
+            <label for="address" class="form-label">Credit Card Number</label>
+          </div>
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="city" />
+            <label for="city" class="form-label">Exp. Date</label>
+          </div>
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="state" />
+            <label for="state" class="form-label">CSV #</label>
+          </div>
+          <div class="d-inline-block col-md-3 my-3">
+            <input class="d-block form-control" type="text" id="zip" />
+            <label for="zip" class="form-label"
+              >Visa Mastercard Discover Amex</label
+            >
+          </div>
+        </div>
+      </section>
+      <section id="bottom-section">
+        <hr class="border bg-secondary border-secondary border-3 opacity-100" />
+        <div class="letter">
+          <p class="my-4">
+            Amount paid at registration $<span class="bg-warning"
+              >_______________</span
+            >
+          </p>
+          <p style="text-align: justify">
+            Parent/Guardians are responsible for payment in full for each month
+            of the Before/After School Program and their child may be release
+            from the program if the payments have not been made. Payments are
+            due on the 1st of the month prior to the month you are planning to
+            attend
+            <span class="text-decoration-underline"
+              >(i.e. September payment is due on or before August 1st).</span
+            >
+            Any changes to your selected days must be communicated to the Child
+            Care Director by the 10th of the month prior to the month in which
+            the change will occur
+            <span class="text-decoration-underline"
+              >(i.e. October's change by September 10th),</span
+            >
+            however, there is no guarantee that a spot will be available for the
+            days you are requesting. All emergency packets and other required
+            paperwork must be completed and returned to Sage YMCA no later than
+            one week before your desired start date. NO EXCEPTIONS. Your child
+            will not be able to participate in the Before/After School Program
+            if the emergency packet has not been completed and submitted.
+          </p>
+          <p>
+            I, Parent/Guardian (Individual responsible for payment) have read
+            and agree to all the conditions of this registration form.
+          </p>
+          <div class="row my-5 text-center">
+            <div class="col-md-7">
+              <p>
+                <span class="bg-warning"
+                  >______________________________________________________________</span
+                > Parent/Guardian Signatures</span
+                >
+              </p>
+            </div>
+            <div class="col-md-5">
+              <p>
+              <span class="bg-warning"
+                  >______________________________________________________________</span
+                > Date
+              </p>
+            </div>
+          </div>
+          <div class="text-center mb-5">
+            <button class="btn btn-primary">Submit Form</button>
+          </div>
+          <p class="text-center my-5">
+            <span class="fw-bolder">SAGE YMCA</span> | 701 Manor Road,
+            Crystal Lake, IL 60014 | 815.459.4455 | sageymca.org
+          </p>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
